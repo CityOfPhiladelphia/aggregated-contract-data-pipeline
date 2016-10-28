@@ -1,0 +1,14 @@
+#!/usr/bin/env python
+
+import click
+import sys
+from phl_contracts.transform import write_contracts_data
+from phl_contracts.utils import open_or_stream
+
+@click.command()
+@click.argument('contract_type')
+def contracts(contract_type):
+    write_contracts_data(sys.stdin, sys.stdout, contract_type)
+
+if __name__ == '__main__':
+    contracts()
