@@ -34,7 +34,7 @@
 
 ## Sample commands:
 
-``bash
+```bash
 csvstack <(in2csv data/FY16Q4/04.2016Contract_Extract_PW_Payments.xls) \
          <(in2csv data/FY16Q4/05.2016_Contract_Extract_PW_Payments.xls) \
          <(in2csv data/FY16Q4/06.2016_Contract_Extract_PW_Payments.xls) \
